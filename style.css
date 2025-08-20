@@ -111,7 +111,8 @@ background-color: black;}
 .button-style {background-color: black;
 padding-inline: 0rem;
 border: black;
-color: white;}
+color: white;
+cursor: pointer;}
 
 .black-background {background-color: black;}
 
@@ -188,7 +189,8 @@ border: 0px solid;}
 background-color: #f6f6f6;
 width: 100%;}
 
-.sign-in-view {min-height: calc(100vh - 480px);}
+.sign-in-view {min-height: calc(100vh - 480px);
+height: 578.98px;}
 
 .email-first-container {color: black;
 max-width: 492px;
