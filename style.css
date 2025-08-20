@@ -1,0 +1,453 @@
+#top-bar {padding-top: 46px;}
+
+.base {display: flex;
+flex-direction: column;
+min-height: 0vh;
+}
+
+.body {display: flex;
+flex-direction: column;
+min-height: 100vh;}
+
+.nav-bar-fixed-content {z-index: 20;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgb(0 0 0/6%);
+position: fixed;
+top: 0;
+width: 100%;}
+
+.nav-bar-wrapper {background-color: black;
+color: rgb(246, 246, 246);}
+
+.nav-bar {-webkit-font-smoothing: antialiased;
+z-index: 50;
+max-width: 1440px;
+font-size: .875rem;
+font-weight: 600;
+position: relative;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+flex: 1 1;
+height: 55px;}
+
+.nav-bar-top-group {display: flex;
+flex-direction: row;
+align-items: center;
+margin-left: auto;
+margin-right: auto;}
+
+.nba-logo-link {text-decoration: none;
+flex-shrink: 0;}
+
+.top-bar-sections {padding-inline: .25rem;
+display: flex;
+flex-wrap: nowrap;
+flex-grow: 1;
+overflow-x: hidden;
+list-style-type: none;
+margin: 0;}
+
+.nav-bar-link {text-decoration: none;
+position: relative;
+display: flex;
+align-items: center;
+--text-opacity: 1;
+--text-opacity: 1;
+color: #fff;
+color: rgba(255,255,255,var(--text-opacity));
+white-space: nowrap;
+transition-property: opacity;
+transition-duration: 150ms;
+height: 55px;
+font-family: "Roboto", arial, sans-serif;
+padding-inline: .5rem;}
+
+.nav-bar-spacer {flex-grow: 1;
+width: auto;
+padding-left: 30px;}
+
+.yellow-border {color: black;
+    box-sizing: border-box;
+border: rgb(251, 205, 68);
+border-radius: 4px;
+height: 2rem;
+border-width: 8px;
+border-style: solid;
+background-color: rgb(251, 205, 68);}
+
+.top-sign-in-div {height: 100%;}
+
+.top-sign-in-move {position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+}
+
+.sign-in-fix {position: relative;
+display: flex;
+align-items: center;
+--text-opacity: 1;
+color: rgba(255,255,255,var(--text-opacity));
+white-space: nowrap;
+height: 55px;
+padding: 0px 8px 0px 8px;
+background-color: #000;
+border: #000;}
+
+.remove-dot {list-style: none;
+padding-left: 0;
+margin: 0;}
+
+.sign-in-font {font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-size: .875rem;
+font-weight: 400;
+text-decoration: none;
+color: white;}
+
+.square-grid-colors {color: #f6f6f6;
+background-color: black;}
+
+.button-style {background-color: black;
+padding-inline: 0rem;
+border: black;
+color: white;}
+
+.black-background {background-color: black;}
+
+.nba-logo-image {padding: 5px 0px 0px 0px;}
+
+.hamburger-button {height: 17px;
+display: inline-block;
+flex-shrink: 0;
+margin: 0;
+cursor: pointer;
+transition-property: opacity, filter;
+transition-duration: .15s;
+transition-timing-function: linear;
+text-transform: none;
+background-color: transparent;
+border: 0;
+overflow: hidden;
+will-change: transform, opacity;
+padding-inline: .75rem;
+padding-block-start: 0;
+padding-block-end: 0;}
+
+@media (min-width: 1280px) {
+    .hamburger-button {display: none;
+visibility: hidden;}
+}
+
+@media (min-width: 768px) {
+    .hamburger-button {margin-right: 20px;}
+
+}
+
+.hamburger-box {width: 22px;
+height: 100%;
+display: inline-block;
+position: relative;}
+
+.hamburger-inner {transition-duration: 75ms;
+transition-timing-function: cubic-bezier(.55,.055,.675,.19);
+width: 100%;
+height: 3px;
+background-color: #fff;
+position: absolute;
+transition-property: transform;
+display: block;
+top: 50%;
+margin-top: -2px;}
+
+.hamburger-inner::before {transition: top 75ms ease .12s, opacity 75ms ease;
+top: -7px;
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+background-color: #fff;
+position: absolute;
+box-sizing: border-box;
+border: 0px solid;}
+
+.hamburger-toggle {visibility: hidden;}
+
+.hamburger-inner::after {transition: bottom 75ms ease .12s, transform 75ms cubic-bezier(.55,.055,.675,.19);
+bottom: -7px;
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+background-color: #fff;
+position: absolute;
+box-sizing: border-box;
+border: 0px solid;}
+
+#white-bar {flex: 1 1;
+background-color: #f6f6f6;
+width: 100%;}
+
+.sign-in-view {min-height: calc(100vh - 480px);}
+
+.email-first-container {color: black;
+max-width: 492px;
+margin: 0 auto;
+padding: 2.5rem 1rem;}
+
+.email-first-logo {width: 40px;
+height: 2.112rem;
+margin-bottom: .5rem;}
+
+.email-first-title {font-family: "Oswald", sans-serif;
+font-weight: 600;
+font-style: normal;
+text-transform: uppercase;
+letter-spacing: 0;
+line-height: 1;
+font-size: 2.80rem;
+margin: 0px 0px 1.5rem 0px;
+font-optical-sizing: auto;}
+
+.email-first-subtitles {font-family: "Roboto", arial, sans-serif;
+font-weight: normal ;
+line-height: 1.2;
+font-size: .875rem;
+margin-bottom: 1rem;
+color: black;}
+
+.email-first-formcontainer {display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;}
+
+.email-first-form{width: 90%;
+padding: 1.5rem;
+border-radius: .25rem;
+background-color: white;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;}
+
+.email-first-inputcontainer {margin-top: 1rem;
+width: 100%;
+position: relative;}
+
+.email-input {display: block;
+width: 100%;
+outline: 2px solid transparent;
+outline-offset: 2px;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 1rem;
+color: #000;
+background-color: transparent;
+line-height: 120%;
+padding-bottom: .5rem;
+padding-left: 0;
+border-radius: 0;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+padding: 0.6rem 0px 0px 0px;
+border: white;
+border-bottom: 1px solid rgb(218, 221, 222);
+}
+
+.email-positioning {transform: translateY(-1rem) scaleX(0.75) scaleY(0.75);
+font-size: 1.1rem;
+line-height: 120%;
+transform-origin: 0px center;
+position: absolute;
+top: 0px;
+pointer-events: none;
+transition-duration: 0.3s;
+animation-duration: 0.3s;
+color: rgb(111, 114, 116);}
+
+.input-button {padding: 0.75rem 1.25rem;
+font-size: 1.25rem;
+color: white;
+background-color: black;
+font-family: "Roboto", arial, sans-serif;
+font-weight: 700;
+line-height: 1;
+width: 90%;
+margin: 3rem 0rem 3rem 1rem;
+border-radius: 4px;
+cursor: pointer;
+border-color: transparent;
+
+transition-property: background-color, color, border-color, border, fill;
+transition-timing-function: ease;
+transition-duration: 0.15s;
+}
+
+.input-button:hover {background-color: white;
+color: rgba(25,28,35,.90);
+border-color: rgba(25,28,35,.90);
+border: 1px solid rgba(25,28,35,.90);}
+
+
+
+
+#bottom-footer {display: grid;
+grid-template-rows: 236px 1fr 236px;
+color: rgb(246, 246, 246);
+font-size: 0.875rem;}
+
+.bottom-footer-inner {max-width: 1440px;
+margin: auto;}
+
+.footer-links-section {display: flex;
+justify-content: space-between;
+flex-direction: column;}
+
+.footer-lists {--border-opacity: 1;
+border-bottom: 1px;
+border-color: rgba(84,84,84,var(--border-opacity));
+border-style: solid;
+box-sizing: border-box;
+line-height: 1.5;
+border-width: 0px 0px 1px 0px;}
+
+.footer-button-style {padding-inline: 2rem;
+    padding-block: 1rem;
+    cursor: default!important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    border-color: transparent;
+    color: #f6f6f6;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Roboto", arial, sans-serif;
+    line-height: 1.2;
+    font-size: .825rem;
+    appearance: none;}
+
+.footer-list-title-arrow {transform: rotate(-90deg);}
+
+.footer-list-ul {line-height: 2rem;
+margin: 0;
+padding: 0;
+display: none;}
+
+.ul-list-link {text-decoration: none;
+        font-family: "Roboto", arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        font-size: 0.875rem;
+        -webkit-font-smoothing: antialiased;
+        color: white;}
+
+.ul-list-link:hover {text-decoration: underline;}
+
+.footer-yellow-border {background-color:rgb(251, 205, 68);
+color: black;
+border-radius: 4px;
+height: 2rem;
+margin-top: .75rem;
+padding: 4px;
+text-decoration: none;
+font-family: "Roboto", Arial, Helvetica, sans-serif;
+font-weight: 400;
+font-size: 0.8rem;}
+
+.footer-yellow-border:hover {text-decoration: underline;}
+
+.footer-white-bar {margin-block: 2rem;
+opacity: 1;
+border-color:rgb(243, 244, 245);
+display: none;}
+
+.footer-social {display: flex;
+flex-direction: column;}
+
+.footer-social-fss {padding-inline: 1rem;
+padding-block: 1.5rem;
+display: flex;}
+
+.footer-social-links {text-decoration: none;
+--transform-translate-y: 0;
+margin-right: 1.25rem;
+color: white;
+transition-duration: .1s;
+transition-timing-function: linear;
+fill: currentColor;
+transform: translate(var(--transform-translate-y));}
+
+.footer-social-legal {flex: 1 1;
+width: 100%;
+font-family: "Roboto", Arial, sans-serif;
+font-weight: 300;
+font-size: .721rem;
+line-height: 1.625;
+padding: 0 1rem;
+margin-bottom: 1rem;}
+
+.footer-div-legalcopy {margin-bottom: .5rem;
+font-weight: 700;}
+
+.footer-legal-links-list {display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+border: 0 solid;
+}
+
+.footer-legal-links:not(:last-child):after {content: "|";
+padding: 0 .5rem;}
+
+.legal-links-name {text-decoration: none;
+position: relative;
+background-color: transparent;
+color: inherit;}
+
+.legal-links-name:hover {color: white;
+text-decoration: underline;}
+
+.footer-legal-links:last-child {font-weight: 400;}
+
+.legal-company-logo {width: 6rem;
+margin-top: 0.5rem;}
+
+.zero-margin-p {margin: 0;}
+
+@media (min-width: 1024px) {
+    .bottom-footer {font-size: 0.75rem;}
+    .bottom-footer-inner {padding: 2rem;}
+    .footer-links-section {flex-direction: row;}
+    .footer-lists {border-style: none;}
+    .footer-list-ul {
+        display: block;
+        padding-inline: .75rem;
+        padding-bottom: 0;}
+    .footer-button-style {padding-inline: 0.60rem;
+    font-size: .625rem;}
+    .footer-list-ul-list {
+        display: block;
+        width: 100%;}
+
+    .footer-lists:last-child {margin-right: 1.5rem;
+        margin-left: 20%;}
+
+    .footer-white-bar {display: block;}
+    .footer-social {flex-direction: row;}
+
+    .footer-social-fss {padding: 0;
+    order: 2;}
+
+    .nav-bar {padding-inline: 2rem;}
+
+    .footer-list-title-arrow {display: none;}
+}
+
+@media (min-width: 768px) {
+    .nba-logo-link {margin-right: 12px;
+width: auto;}
+}
