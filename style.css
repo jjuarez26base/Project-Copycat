@@ -365,6 +365,12 @@ opacity: 1;
 border-color:rgb(243, 244, 245);
 display: none;}
 
+.footer-white-bar-two {margin: 0px 0px 0px 0px;
+opacity: 1;
+border-color:rgb(88, 88, 88);
+display: none;
+width: 100%;}
+
 .footer-social {display: flex;
 flex-direction: column;}
 
@@ -380,6 +386,26 @@ transition-duration: .1s;
 transition-timing-function: linear;
 fill: currentColor;
 transform: translate(var(--transform-translate-y));}
+
+.footer-social-links:last-child {margin-right: 0px;}
+
+.twitch-image-style {width: 25px;}
+
+.youtube-image-style {width: 30px;}
+
+.twitter-image-style {width: 22px;}
+
+.tik-tok-logo {width: 20px;}
+
+.snapchat-logo {width: 22px;}
+
+.instagram-logo {width: 22px;}
+
+.facebook-logo {width: 23px;}
+
+.white-grid {width: 18px;}
+
+.white-arrow {width: 20px;}
 
 .footer-social-legal {flex: 1 1;
 width: 100%;
@@ -420,25 +446,32 @@ margin-top: 0.5rem;}
 
 .zero-margin-p {margin: 0;}
 
-@media (min-width: 1024px) {
-    .bottom-footer {font-size: 0.75rem;}
+@media (min-width: 1024px) {.bottom-footer {font-size: 0.75rem;}
+
     .bottom-footer-inner {padding: 2rem;}
+
     .footer-links-section {flex-direction: row;}
+
     .footer-lists {border-style: none;}
+
     .footer-list-ul {
         display: block;
         padding-inline: .75rem;
         padding-bottom: 0;}
+
     .footer-button-style {padding-inline: 0.60rem;
     font-size: .625rem;}
-    .footer-list-ul-list {
-        display: block;
+
+    .footer-list-ul-list {display: block;
         width: 100%;}
 
     .footer-lists:last-child {margin-right: 1.5rem;
         margin-left: 20%;}
 
     .footer-white-bar {display: block;}
+
+    .footer-white-bar-two {display: block;}
+
     .footer-social {flex-direction: row;}
 
     .footer-social-fss {padding: 0;
@@ -449,7 +482,6 @@ margin-top: 0.5rem;}
     .footer-list-title-arrow {display: none;}
 }
 
-@media (min-width: 768px) {
-    .nba-logo-link {margin-right: 12px;
+@media (min-width: 768px) {.nba-logo-link {margin-right: 12px;
 width: auto;}
 }
