@@ -330,7 +330,6 @@ border-width: 0px 0px 1px 0px;}
     font-size: .825rem;
     appearance: none;}
 
-.footer-list-title-arrow {transform: rotate(-90deg);}
 
 .footer-list-ul {line-height: 2rem;
 margin: 0;
@@ -479,7 +478,7 @@ margin-top: 0.5rem;}
 
     .nav-bar {padding-inline: 2rem;}
 
-    .footer-list-title-arrow {display: none;}
+    .white-arrow {display: none;}
 }
 
 @media (min-width: 768px) {.nba-logo-link {margin-right: 12px;
