@@ -1,5 +1,6 @@
-#top-bar {padding-top: 55px;
-background-color: #fff;}
+#top-bar {background-color: #fff;}
+
+.first-div {padding-top: 55px;}
 
 .base {display: flex;
 flex-direction: column;
@@ -40,7 +41,9 @@ margin-left: auto;
 margin-right: auto;}
 
 .nba-logo-link {text-decoration: none;
-flex-shrink: 0;}
+flex-shrink: 0;
+margin-right: .25rem;
+width: 3rem;}
 
 .top-bar-sections {padding-inline: .25rem;
 display: flex;
@@ -134,7 +137,8 @@ cursor: pointer;}
 
 .black-background {background-color: black;}
 
-.nba-logo-image {padding: 5px 0px 0px 0px;}
+.nba-logo-image {padding: 5px 0px 0px 0px;
+width: 48px;}
 
 .hamburger-button {height: 17px;
 display: inline-block;
@@ -151,22 +155,28 @@ overflow: hidden;
 will-change: transform, opacity;
 padding-inline: .75rem;
 padding-block-start: 0;
-padding-block-end: 0;}
+padding-block-end: 0;
+margin-top: 5px;}
 
 @media (min-width: 1280px) {
     .hamburger-button {display: none;
 visibility: hidden;}
+
 }
+
+@media (max-width: 1280px) {.nav-bar-spacer {display: none;}}
 
 @media (min-width: 768px) {
     .hamburger-button {margin-right: 20px;}
+    
 
 }
 
 .hamburger-box {width: 22px;
 height: 100%;
 display: inline-block;
-position: relative;}
+position: relative;
+padding-top: 5px;}
 
 .hamburger-inner {transition-duration: 75ms;
 transition-timing-function: cubic-bezier(.55,.055,.675,.19);
@@ -312,8 +322,7 @@ border: 1px solid rgba(25,28,35,.90);}
 
 
 
-#bottom-footer {display: grid;
-grid-template-rows: 236px 1fr 236px;
+#bottom-footer {display: block;
 color: rgb(246, 246, 246);
 font-size: 0.875rem;
 background-color: #000;}
@@ -323,15 +332,16 @@ margin: auto;}
 
 .footer-links-section {display: flex;
 justify-content: space-between;
-flex-direction: column;}
+flex-direction: column;
+height: 240px;}
 
 .footer-lists {--border-opacity: 1;
 border-bottom: 1px;
 border-color: rgba(84,84,84,var(--border-opacity));
 border-style: solid;
 box-sizing: border-box;
-line-height: 1.5;
-border-width: 0px 0px 1px 0px;}
+border-width: 0px 0px 1px 0px;
+height: 50px;}
 
 .footer-button-style {padding-inline: 2rem;
     padding-block: 1rem;
@@ -347,8 +357,9 @@ border-width: 0px 0px 1px 0px;}
     font-weight: 900;
     font-family: "Roboto", arial, sans-serif;
     line-height: 1.2;
-    font-size: .825rem;
-    appearance: none;}
+    font-size: .890rem;
+    appearance: none;
+border: 0px;}
 
 
 .footer-list-ul {line-height: 2rem;
@@ -514,4 +525,5 @@ margin-top: 0.5rem;}
 
 @media (min-width: 768px) {.nba-logo-link {margin-right: 16px;
 width: auto;}
+.nav-bar {padding-inline: 1rem;}
 }
