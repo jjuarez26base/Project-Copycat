@@ -1,6 +1,8 @@
-#top-bar {background-color: #fff;}
+#top-bar {background-color: #fff;
+height: 55px;}
 
-.first-div {padding-top: 55px;}
+.first-div {padding-top: 0px;
+min-height: 100vh;}
 
 .base {display: flex;
 flex-direction: column;
@@ -9,7 +11,6 @@ min-height: 0vh;
 
 .body {display: flex;
 flex-direction: column;
-min-height: 100vh;
 width: auto;
 margin: 0px;}
 
@@ -50,7 +51,7 @@ display: flex;
 flex-wrap: nowrap;
 flex-grow: 1;
 overflow-x: hidden;
-list-style-type: none;
+list-style: none;
 margin: 0;}
 
 .nav-bar-link {text-decoration: none;
@@ -84,8 +85,7 @@ font-family: "Roboto", arial, sans-serif;
 padding-inline: 0rem;}
 
 .nav-bar-spacer {flex-grow: 1;
-width: auto;
-padding-left: 30px;}
+width: auto;}
 
 .yellow-border {color: black;
     box-sizing: border-box;
@@ -137,9 +137,6 @@ cursor: pointer;}
 
 .black-background {background-color: black;}
 
-.nba-logo-image {padding: 5px 0px 0px 0px;
-width: 48px;}
-
 .hamburger-button {height: 17px;
 display: inline-block;
 flex-shrink: 0;
@@ -160,17 +157,10 @@ margin-top: 5px;}
 
 @media (min-width: 1280px) {
     .hamburger-button {display: none;
-visibility: hidden;}
-
-}
-
-@media (max-width: 1280px) {.nav-bar-spacer {display: none;}}
+visibility: hidden;}}
 
 @media (min-width: 768px) {
-    .hamburger-button {margin-right: 20px;}
-    
-
-}
+    .hamburger-button {margin-right: 20px;}}
 
 .hamburger-box {width: 22px;
 height: 100%;
@@ -214,8 +204,7 @@ box-sizing: border-box;
 border: 0px solid;}
 
 #white-bar {flex: 1 1;
-background-color: #f6f6f6;
-width: auto;}
+background-color: #f6f6f6;}
 
 .sign-in-view {min-height: calc(100vh - 480px);
 height: 555px;}
@@ -298,7 +287,7 @@ font-size: 16px;}
 .input-button {padding: 0.75rem 1.25rem;
 font-size: 1.25rem;
 color: white;
-background-color: black;
+background-color: rgb(25, 28, 35);
 font-family: "Roboto", arial, sans-serif;
 font-weight: 700;
 line-height: 1;
@@ -308,6 +297,7 @@ border-radius: 4px;
 border: 1px;
 cursor: pointer;
 border-color: transparent;
+border-style: solid;
 
 transition-property: background-color, color, border-color, border, fill;
 transition-timing-function: ease;
@@ -325,26 +315,24 @@ border: 1px solid rgba(25,28,35,.90);}
 #bottom-footer {display: block;
 color: rgb(246, 246, 246);
 font-size: 0.875rem;
-background-color: #000;}
+background-color: #000;
+height: 464px;}
 
 .bottom-footer-inner {max-width: 1440px;
 margin: auto;}
 
 .footer-links-section {display: flex;
 justify-content: space-between;
-flex-direction: column;
-height: 240px;}
+flex-direction: column;}
 
 .footer-lists {--border-opacity: 1;
 border-bottom: 1px;
 border-color: rgba(84,84,84,var(--border-opacity));
 border-style: solid;
 box-sizing: border-box;
-border-width: 0px 0px 1px 0px;
-height: 50px;}
+border-width: 0px 0px 1px 0px;}
 
-.footer-button-style {padding-inline: 2rem;
-    padding-block: 1rem;
+.footer-button-style {padding: 14.5px 25px 16px 32px;
     cursor: default!important;
     display: flex;
     align-items: center;
@@ -357,10 +345,9 @@ height: 50px;}
     font-weight: 900;
     font-family: "Roboto", arial, sans-serif;
     line-height: 1.2;
-    font-size: .890rem;
+    font-size: .870rem;
     appearance: none;
 border: 0px;}
-
 
 .footer-list-ul {line-height: 2rem;
 margin: 0;
@@ -392,8 +379,12 @@ font-size: 0.85rem;}
 
 .footer-white-bar {margin-block: 2rem;
 opacity: 1;
-border-color:rgb(243, 244, 245);
-display: none;}
+border-color:rgb(255, 255, 255);
+display: none;
+border-bottom: 0px;
+border-left: 0px;
+border-right: 0px;
+border-top: 1px solid white;}
 
 .footer-white-bar-two {margin: 0px 0px 0px 0px;
 opacity: 1;
@@ -406,7 +397,8 @@ flex-direction: column;}
 
 .footer-social-fss {padding-inline: 1rem;
 padding-block: 1.5rem;
-display: flex;}
+display: flex;
+height: 28px;}
 
 .footer-social-links {text-decoration: none;
 --transform-translate-y: 0;
@@ -445,8 +437,8 @@ font-family: "Roboto", Arial, sans-serif;
 font-weight: 300;
 font-size: .75rem;
 line-height: 1.625;
-padding: 0 1rem;
-margin-bottom: 1rem;}
+padding: 0 0rem 0 1rem;
+margin-bottom: 0.5rem;}
 
 .footer-div-legalcopy {margin-bottom: .5rem;
 font-weight: 700;}
@@ -486,6 +478,8 @@ margin-top: 0.5rem;}
 
 .zero-margin-p {margin: 0;}
 
+.footer-white-bar-two {display: block;}
+
 @media (min-width: 1024px) {.bottom-footer {font-size: 0.75rem;}
 
     .bottom-footer-inner {padding: 2rem;}
@@ -511,8 +505,6 @@ margin-top: 0.5rem;}
 
     .footer-white-bar {display: block;}
 
-    .footer-white-bar-two {display: block;}
-
     .footer-social {flex-direction: row;}
 
     .footer-social-fss {padding: 0;
@@ -521,9 +513,21 @@ margin-top: 0.5rem;}
     .nav-bar {padding-inline: 2rem;}
 
     .white-arrow {display: none;}
+
+    .nba-logo-link {margin-right: 19px;}
+
+    .nba-logo-image {padding: 5px 0px 0px 0px;
+width: 51px;}
 }
 
-@media (min-width: 768px) {.nba-logo-link {margin-right: 16px;
+@media (min-width: 768px) and (max-width:1023px) {.nba-logo-link {margin-right: 16px;
 width: auto;}
-.nav-bar {padding-inline: 1rem;}
-}
+.nav-bar {padding-inline: 1rem;}}
+
+@media (max-width: 1023px) {.footer-lists {height: 50px;}
+.nba-logo-image {padding: 5px 0px 0px 0px;
+max-width: 100%;
+height: auto;}
+.footer-social-legal {padding: 0px 1rem;
+box-sizing: border-box;
+border: 0 solid;}}
